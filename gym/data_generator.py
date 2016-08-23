@@ -26,9 +26,9 @@ def input_generator():
 
 def midi_input_generator():
     while True:
-        files = [each for each in listdir('/mid') if each.endswith('.mid')]
+        files = [each for each in listdir('midi') if each.endswith('.mid')]
         for file in files:
-            parser = MidiParser(file)
+            parser = MidiParser('midi/'+file)
             input_gen = parser.Parse()
             batches = np.zeros((batch_size, sequence_length+1, input_size), dtype='float32' )
             batches_fill = 0

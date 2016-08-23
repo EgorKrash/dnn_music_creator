@@ -13,8 +13,7 @@ class MidiParser():
     
     
     def checking_note_offs(self):
-        song = self.song
-        for track in song.tracks:
+        for track in self.song.tracks:
             for message in track:
                 if message.type is 'note_off':
                     return True
@@ -24,8 +23,8 @@ class MidiParser():
     #===========================================================================
     def null_vel_to_note_off(self):
         if not self.checking_note_offs():
-            song = self.song
-            for track in song.tracks:
+
+            for track in self.song.tracks:
                 for index,message in enumerate(track):
                     if message.type is 'note_on' and message.velocity is 0:
                         time = message.time
@@ -35,8 +34,6 @@ class MidiParser():
                         
                         track.remove(message)
                         track.insert(index,Message('note_off', channel=channel, note=note, velocity=velocity,time=time))
-                        
-            self.song = song
             return self.song
         else:
             return self.song
@@ -44,9 +41,8 @@ class MidiParser():
     #===========================================================================
     
     def unique_notes(self):
-        song = self.song
         unique_notes = []
-        for track in song.tracks:
+        for track in self.song.tracks:
             for message in track:
                 try:
                     if message.note in unique_notes:
@@ -98,14 +94,13 @@ class MidiParser():
     #===========================================================================
     
     def get_durations_and_velocities(self):
-        
-        song = self.song
+
         
         velocities = {}
         durations = {}
         notes = {}
         current_time = 0
-        for track in song.tracks[1:]:
+        for track in self.song.tracks[1:]:
             for message in track:
                 current_time += message.time 
                 if message.type is 'note_on':
