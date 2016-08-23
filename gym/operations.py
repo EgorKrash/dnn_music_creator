@@ -34,7 +34,7 @@ class MidiParser():
                         note = message.note
                         
                         track.remove(message)
-                        track.insert(index,Message('note_off', channel=channel, note=note, velocity=100,time=time))
+                        track.insert(index,Message('note_off', channel=channel, note=note, velocity=velocity,time=time))
                         
             self.song = song
             return self.song
