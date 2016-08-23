@@ -11,6 +11,7 @@ class MidiParser():
         
     #===========================================================================    
     
+    
     def checking_note_offs(self):
         song = self.song
         for track in song.tracks:
@@ -33,7 +34,7 @@ class MidiParser():
                         note = message.note
                         
                         track.remove(message)
-                        track.insert(index,Message('note_off', channel=channel, note=note, velocity=100,time=time))
+                        track.insert(index,Message('note_off', channel=channel, note=note, velocity=velocity,time=time))
                         
             self.song = song
             return self.song
@@ -84,10 +85,14 @@ class MidiParser():
     def find_start(self):
         lengths = []
         for track in self.song.tracks:
+            time = 0
             for message in track:
+
+                time += message.time
                 if message.type == 'note_on':
-                    lengths.append(message.time) 
+                    lengths.append(time) 
                     break
+
         return min(lengths)
     
     #===========================================================================
