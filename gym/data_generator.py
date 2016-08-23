@@ -53,7 +53,7 @@ def generate_song_array(model):
 
 def is_empty(intervals):
     for el in intervals:
-        if len(el)> 0:
+        if len(intervals[el]) > 0:
             return False
     return True
 
@@ -62,6 +62,7 @@ def save_array_to_midi(vec, name):
     mid = MidiFile()
     mid.tracks.append(MidiTrack())
     tr = mid.tracks[0]
+    tr.append(Message('program_change', program=0, time=0))
     notes = [False]*notes_size
     intervals = {}
     velocities = {}
@@ -70,7 +71,6 @@ def save_array_to_midi(vec, name):
         velocities[i] = []
 
     velocity = [0]*notes_size
-    print vec
     for tick_num, tick in enumerate(vec[0]):
         for note, val in enumerate(tick):
             if note < notes_size:
@@ -90,32 +90,40 @@ def save_array_to_midi(vec, name):
             elif notes[note - notes_size]:
                 velocity[note - notes_size] += val
     last_time = 0
-    print intervals
+    for i in xrange(128):
+        if len(intervals[i]) > 0 and intervals[i][-1][1] == -1:
+            del intervals[i][-1]
+        assert len(intervals[i]) == len(velocities[i])
     while not is_empty(intervals):
         min_note = -1
         min_tick = -1
-        for note, interval in enumerate(intervals):
-            #print interval
+        for note in intervals:
+            interval = intervals[note]
             if len(interval) == 0:
                 continue
-            if (min_tick == -1 and interval[0][0] != -1) or interval[0][0] <= min_tick:
+            if (min_tick == -1 or interval[0][0] <= min_tick) and interval[0][0] != -1:
                 min_tick = interval[0][0]
                 min_note = note
-            elif (min_tick == -1 and interval[0][1] != -1) or interval[0][1] <= min_tick:
+            elif (min_tick == -1 or interval[0][1] <= min_tick) and interval[0][1] != -1:
                 min_tick = interval[0][1]
                 min_note = note
         #if min_note == -1:
             #print intervals
         message = ''
-        if intervals[min_note][0] != -1:
-            message = Message('note_on', note=min_note, velocity=int(min(round([note][0]*127), 127)), time=(min_tick-last_time)*tick_length)
-            intervals[min_note][0] = -1
-            del velocities[note][0]
+        if min_note == -1:
+            break
+        if intervals[min_note][0][0] != -1:
+            #message = Message('note_on', note=min_note, velocity=int(min(round(velocities[min_note][0]*127), 127)), time=(min_tick-last_time)*tick_length)
+            message = Message('note_on', note=min_note, velocity=64, time=(min_tick-last_time)*tick_length)
+            intervals[min_note][0] = (-1, intervals[min_note][0][1])
+            del velocities[min_note][0]
         else:
             message = Message('note_off', note=min_note, time=(min_tick - last_time)*tick_length)
-            del intervals[note][0]
+            del intervals[min_note][0]
         last_time = min_tick
         tr.append(message)
+    for m in tr:
+        print m
     mid.save(name)
 
 
