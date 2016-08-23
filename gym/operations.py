@@ -131,7 +131,6 @@ class MidiParser():
     #================================================================================
     
     def Parse(self):
-        song = self.song
         self.null_vel_to_note_off()
         dic,velocities = self.get_durations_and_velocities()
         sorted_dic = self.sorting_by_value(dic)

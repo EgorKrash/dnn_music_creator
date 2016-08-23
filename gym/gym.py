@@ -3,7 +3,7 @@ from keras.layers import LSTM, Activation, TimeDistributed, Dense
 from keras.callbacks import BaseLogger
 from properties import *
 
-from data_generator import input_generator, make_song_array
+from data_generator import midi_input_generator, generate_song_array
 
 print "Compiling model"
 model = Sequential()
@@ -27,6 +27,6 @@ arr = arr[:-1]
 print "Training model"
 
 
-model.fit_generator(input_generator(), 500, nb_epoch=num_epochs, callbacks=[BaseLogger()])
+model.fit_generator(midi_input_generator(), 500, nb_epoch=num_epochs, callbacks=[BaseLogger()])
 
-print make_song_array(model)
+print generate_song_array(model)
