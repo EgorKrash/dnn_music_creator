@@ -122,22 +122,4 @@ def save_array_to_midi(vec, name):
             del intervals[min_note][0]
         last_time = min_tick
         tr.append(message)
-    for m in tr:
-        print m
     mid.save(name)
-
-
-p = MidiParser('midi/abide_.mid')
-gen = p.Parse()
-arr = []
-c = 0
-print 'parsing midi file'
-for m in gen:
-    arr.append(m)
-    c += 1
-    if c == 1000:
-        break
-
-print 'saving '
-save_array_to_midi([arr], 'HelloWorld.mid')
-print 'done'
