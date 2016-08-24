@@ -24,12 +24,7 @@ arr = arr[:-1]
 
 
 
-print "Training model"
-
-#print generate_song_array(model)
-#save_array_to_midi([generate_song_array(model)], 'Generated_zero.mid')
-model.fit_generator(midi_input_generator(), 500, nb_epoch=num_epochs, callbacks=[BaseLogger()])
-
-model.save_weights('net_dump.nw')
+print "Testing saved model"
+model.load_weights('net_dump.nw')
 
 save_array_to_midi([generate_song_array(model)], 'Generated.mid')

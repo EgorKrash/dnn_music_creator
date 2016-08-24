@@ -1,6 +1,7 @@
 from mido import Message, MidiTrack
 import numpy as np
 from mido import MidiFile
+from time import clock
 
 import numpy as np
 
@@ -94,8 +95,6 @@ class MidiParser():
     #===========================================================================
     
     def get_durations_and_velocities(self):
-
-        
         velocities = {}
         durations = {}
         notes = {}
@@ -103,7 +102,7 @@ class MidiParser():
         for track in self.song.tracks[1:]:
             for message in track:
                 current_time += message.time 
-                if message.type is 'note_on':
+                if message.type is 'note_on' and message.velocity > 0:
                     if message.note in notes:
                         continue
                     else:
@@ -113,7 +112,7 @@ class MidiParser():
                         else:
                             velocities[message.note] = [message.velocity]
 
-                elif message.type is 'note_off':
+                elif message.type is 'note_off' or (message.type is 'note_on' and message.velocity is 0):
                     try:
                         notes[message.note].append(current_time)
                         if message.note in durations:
@@ -131,15 +130,12 @@ class MidiParser():
     #================================================================================
     
     def Parse(self):
-        self.null_vel_to_note_off()
-        dic,velocities = self.get_durations_and_velocities()
+        dic, velocities = self.get_durations_and_velocities()
         sorted_dic = self.sorting_by_value(dic)
 
         tick = 10
-
         current_time = self.find_start()
         len_of_song = self.get_length() 
-
         result = []
         while current_time < len_of_song:
             vec = np.array([0]*128,dtype='float32')

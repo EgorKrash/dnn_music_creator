@@ -36,7 +36,7 @@ def midi_input_generator():
                 batches[batches_fill, i % sequence_length] = val
                 if i % (sequence_length+1) == sequence_length:
                     batches_fill += 1
-                    if batches_fill == batch_size:
+                    if batches_fill == batch_size+1:
                         yield (batches[:][:-1][:], batches[:][1:][:])
                         batches = np.zeros((batch_size, sequence_length+1, input_size), dtype='float32')
                         batches_fill = 0
