@@ -12,16 +12,16 @@ def midi_input_generator():
         for f in files:
             parser = MidiParser('midi/'+f)
             input_gen = parser.Parse()
-            batches = np.zeros((batch_size+1, sequence_length+1, input_size), dtype='float32')
+            batches = np.zeros((num_seq_to_generate+1, sequence_length+1, input_size), dtype='float32')
             batches_fill = 0
             i = 0
             for val in input_gen:
                 batches[batches_fill, i % (sequence_length + 1)] = val
                 if i % (sequence_length+1) == sequence_length:
                     batches_fill += 1
-                    if batches_fill == batch_size+1:
+                    if batches_fill == num_seq_to_generate+1:
                         yield (batches[:][:-1][:], batches[:][1:][:])
-                        batches = np.zeros((batch_size+1, sequence_length+1, input_size), dtype='float32')
+                        batches = np.zeros((num_seq_to_generate+1, sequence_length+1, input_size), dtype='float32')
                         batches_fill = 0
                     continue
                 i += 1
@@ -29,18 +29,23 @@ def midi_input_generator():
 
 def generate_song_array(model):
     part = np.zeros((1, input_size), dtype='float32')
-
     f = choice([each for each in listdir('midi') if each.endswith('.mid')])
     parser = MidiParser('midi/'+f)
+    print 'Generating song array from', f
     gen = parser.Parse()
     i = 0
     for p in gen:
         i += 1
         part = np.append(part, [p], axis=0)
+        if i == sequence_length:
+            break
 
-    for i in xrange(sequence_length):
+    for i in xrange(out_sequence_length):
+        print i, 'of', out_sequence_length
         val = np.array([part])
         part = np.append(part, [model.predict(val)[-1, -1]], axis=0)
+        if part.shape[0] > sequence_length:
+            part = part[1:]
     return part
 
 
