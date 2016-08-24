@@ -31,7 +31,7 @@ def generate_song_array(model):
     part = np.zeros((1, input_size), dtype='float32')
 
     f = choice([each for each in listdir('midi') if each.endswith('.mid')])
-    parser = MidiParser(f)
+    parser = MidiParser('midi/'+f)
     gen = parser.Parse()
     i = 0
     for p in gen:
