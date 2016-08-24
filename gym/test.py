@@ -1,15 +1,8 @@
-from keras.models import Sequential
-from keras.layers import LSTM, Activation, TimeDistributed, Dense
-from keras.callbacks import BaseLogger
 from properties import *
-
+from model import model
 from data_generator import midi_input_generator, generate_song_array, save_array_to_midi
 
-print "Compiling model"
-model = Sequential()
-model.add(LSTM(256, input_dim=input_size, return_sequences=True))
-model.add(TimeDistributed(Dense(input_size)))
-model.compile(optimizer='rmsprop', loss='mse')
+
 
 print "Generating data"
 arr = list()
