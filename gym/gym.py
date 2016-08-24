@@ -21,7 +21,7 @@ print "Training model"
 
 #print generate_song_array(model)
 #save_array_to_midi([generate_song_array(model)], 'Generated_zero.mid')
-model.fit_generator(midi_input_generator(), 500, nb_epoch=num_epochs, callbacks=[BaseLogger()])
+model.fit_generator(midi_input_generator(), num_sec_in_epoch, nb_epoch=num_epochs, callbacks=[BaseLogger()])
 
 model.save_weights('net_dump.nw')
 

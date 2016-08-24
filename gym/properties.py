@@ -2,6 +2,7 @@ input_size = 256
 notes_size = 128
 batch_size = 20
 num_seq_to_generate = 20
+num_seq_in_epoch = 3000
 sequence_length = 1000
 out_sequence_length = 1000
 num_epochs = 30
