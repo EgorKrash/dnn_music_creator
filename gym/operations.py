@@ -129,11 +129,9 @@ class MidiParser():
     
     #================================================================================
     
-    def Parse(self):
+    def Parse(self, tick):
         dic, velocities = self.get_durations_and_velocities()
         sorted_dic = self.sorting_by_value(dic)
-
-        tick = 10
         current_time = self.find_start()
         len_of_song = self.get_length() 
         result = []

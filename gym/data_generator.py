@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 from random import choice
 from mido import MidiFile, MidiTrack, Message
@@ -11,7 +12,7 @@ def midi_input_generator():
         files = [each for each in listdir('midi') if each.endswith('.mid')]
         for f in files:
             parser = MidiParser('midi/'+f)
-            input_gen = parser.Parse()
+            input_gen = parser.Parse(tick_length)
             batches = np.zeros((num_seq_to_generate+1, sequence_length+1, input_size), dtype='float32')
             batches_fill = 0
             i = 0
@@ -27,26 +28,47 @@ def midi_input_generator():
                 i += 1
 
 
+def __sample(a, temperature=1.0):
+    #print(a)
+
+    a = np.log(a) / temperature
+    #print(a)
+
+    a = (np.exp(a) - max(a)) / np.sum(np.exp(a) - max(a))
+    return np.argsort(np.random.multinomial(1, a, 1))[0][:max_notes_together]
+
+
 def generate_song_array(model):
     part = np.zeros((1, input_size), dtype='float32')
     f = choice([each for each in listdir('midi') if each.endswith('.mid')])
     parser = MidiParser('midi/'+f)
-    print 'Generating song array from', f
-    gen = parser.Parse()
+    print ('Generating song array from', f)
+    gen = parser.Parse(tick_length)
     i = 0
     for p in gen:
         i += 1
         part = np.append(part, [p], axis=0)
         if i == sequence_length:
             break
-
+    print ('', end='')
+    res = np.zeros((out_sequence_length, input_size), dtype=float)
     for i in xrange(out_sequence_length):
-        print i, 'of', out_sequence_length
+        print('\r', i, 'of', out_sequence_length, end='')
         val = np.array([part])
         part = np.append(part, [model.predict(val)[-1, -1]], axis=0)
+        is_on = [0.0]*notes_size
+        for j in xrange(notes_size):
+            if part[-1][j] < note_on_threshold:
+                part[-1][j] = 0.01
+        pl = __sample(part[-1][:notes_size], 0.01)
+        part[-1] = np.zeros(input_size)
+        for j in pl:
+            part[-1][j] = 1
+        #print (' started ', pl, 'asdf')
         if part.shape[0] > sequence_length:
             part = part[1:]
-    return part
+        res[i] = part[-1]
+    return res
 
 
 def is_empty(intervals):
