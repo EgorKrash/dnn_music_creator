@@ -7,6 +7,8 @@ def squared_error(y_true, y_pred):
     return K.sum(K.square(y_pred - y_true), axis=-1)# / T.add(K.sum(y_pred, axis=-1), 0.001)
 
 
+#this is a model
+
 print "Compiling model"
 model = Sequential()
 model.add(LSTM(512, input_dim=input_size, return_sequences=True))
