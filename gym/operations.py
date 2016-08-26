@@ -100,9 +100,11 @@ class MidiParser():
         notes = {}
         current_time = 0
         for track in self.song.tracks[1:]:
+            is_noted = False
             for message in track:
                 current_time += message.time 
                 if message.type is 'note_on' and message.velocity > 0:
+                    is_noted = True
                     if message.note in notes:
                         continue
                     else:
@@ -123,7 +125,8 @@ class MidiParser():
 
                     except KeyError:
                         continue
-
+            if is_noted:
+                break
             current_time = 0
         return durations,velocities
     
