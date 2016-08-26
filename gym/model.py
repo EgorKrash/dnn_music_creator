@@ -11,8 +11,7 @@ def squared_error(y_true, y_pred):
 
 print "Compiling model"
 model = Sequential()
-model.add(LSTM(512, input_dim=input_size, return_sequences=True))
-model.add(LSTM(512, return_sequences=True))
+model.add(LSTM(128, input_dim=input_size, return_sequences=True))
 model.add(TimeDistributed(Dense(input_size)))
 model.add(Activation('sigmoid'))
 model.compile(optimizer='rmsprop', loss=squared_error)
