@@ -11,13 +11,14 @@ def midi_input_generator():
     while True:
         files = [each for each in listdir('midi') if each.endswith('.mid')]
         for f in files:
-            parser = MidiParser('midi/'+f)
+            parser = MidiParser(midi_folder+f)
             input_gen = parser.Parse(tick_length)
             batches = np.zeros((num_seq_to_generate+1, sequence_length+1, input_size), dtype='float32')
             batches_fill = 0
             i = 0
             for val in input_gen:
                 batches[batches_fill, i % (sequence_length + 1)] = val
+                #print(val)
                 if i % (sequence_length+1) == sequence_length:
                     batches_fill += 1
                     if batches_fill == num_seq_to_generate+1:
@@ -40,8 +41,8 @@ def __sample(a, temperature=1.0):
 
 def generate_song_array(model):
     part = np.zeros((1, input_size), dtype='float32')
-    f = choice([each for each in listdir('midi') if each.endswith('.mid')])
-    parser = MidiParser('midi/'+f)
+    f = choice([each for each in listdir(midi_folder) if each.endswith('.mid')])
+    parser = MidiParser(midi_folder+f)
     print ('Generating song array from', f)
     gen = parser.Parse(tick_length)
     i = 0
@@ -62,6 +63,7 @@ def generate_song_array(model):
                 part[-1][j] = 0.01
         pl = __sample(part[-1][:notes_size], 0.01)
         part[-1] = np.zeros(input_size)
+        print(pl)
         for j in pl:
             part[-1][j] = 1
         #print (' started ', pl, 'asdf')
