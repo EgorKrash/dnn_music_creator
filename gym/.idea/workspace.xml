@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="601e13fd-581a-45f3-a0ce-a9ed6ecd112a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lstm_text_generation.py" afterPath="$PROJECT_DIR$/lstm_text_generation.py" />
     </list>
     <ignored path="gym.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -475,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472253573101</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added lstm_text-music generator">
+      <created>1472254262071</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1472254262071</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -522,7 +528,8 @@
     <MESSAGE value="started training!" />
     <MESSAGE value="added spe property" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="added lstm_text-music generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lstm_text-music generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
