@@ -61,7 +61,7 @@ def generate_text():
         files = [each for each in listdir('midi') if each.endswith('.mid')]
         for i, fi in enumerate(files):
             text = ''
-            print(fi)
+            #print(fi)
             parsed = converter.parse('midi/'+fi)
 
             for thisNote in parsed.recurse().notes:
@@ -69,7 +69,7 @@ def generate_text():
                     text += pitch.name
                 text += 'z'
 
-            print('corpus length:', len(text))
+            #print('corpus length:', len(text))
             # cut the text in semi-redundant sequences of maxlen characters
 
             sentences = []
@@ -77,16 +77,16 @@ def generate_text():
             for i in range(0, len(text) - maxlen, step):
                 sentences.append(text[i: i + maxlen])
                 next_chars.append(text[i + maxlen])
-            print('nb sequences:', len(sentences))
+            #print('nb sequences:', len(sentences))
 
-            print('Vectorization...')
+            #print('Vectorization...')
             X = np.zeros((len(sentences), maxlen, len(chars)), dtype=np.bool)
             y = np.zeros((len(sentences), len(chars)), dtype=np.bool)
             for i, sentence in enumerate(sentences):
                 for t, char in enumerate(sentence):
                     X[i, t, char_indices[char]] = 1
                 y[i, char_indices[next_chars[i]]] = 1
-            yield (X,y)
+            yield ([X],[y])
 
 
 # build the model: a single LSTM
@@ -115,7 +115,7 @@ for iteration in range(1, 10):
     print()
     print('-' * 50)
     print('Iteration', iteration)
-    model.fit_generator(generate_text(), 100, nb_epoch=1)
+    model.fit_generator(generate_text(), 1720, nb_epoch=1)
 
     start_index = random.randint(0, len(text) - maxlen - 1)
 
