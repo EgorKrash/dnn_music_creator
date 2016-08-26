@@ -4,7 +4,7 @@ batch_size = 20
 
 model_check_point_file = 'model_check_point.cp'
 
-num_seq_to_generate = 2
+num_seq_to_generate = 20
 num_seq_in_epoch = 1000
 sequence_length = 100
 out_sequence_length = 500

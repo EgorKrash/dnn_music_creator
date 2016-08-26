@@ -91,19 +91,32 @@ class MidiParser():
                     break
 
         return min(lengths)
+
+    # ===========================================================================
+    @staticmethod
+    def is_percussion(track):
+        for msg in track:
+            if msg.type == 'pitchwheel':
+                return True
+            if msg.type == 'program_change' and 113 <= msg.program <= 120:
+                return True
+            elif msg.type in ['program_change', 'note_on']:
+                return False
+
+    # ===========================================================================
     
-    #===========================================================================
-    
-    def get_durations_and_velocities(self):
+    def get_durations_and_velocities(self, take_first=True, start_track=1):
         velocities = {}
         durations = {}
         notes = {}
         current_time = 0
-        for track in self.song.tracks[1:]:
+        for track in self.song.tracks[start_track:]:
+            is_noted = False
             for message in track:
                 current_time += message.time 
                 if message.type is 'note_on' and message.velocity > 0:
-                    if message.note in notes:
+                    is_noted = True
+                    if message.note in notes and take_first:
                         continue
                     else:
                         notes[message.note] = [current_time]
@@ -123,21 +136,29 @@ class MidiParser():
 
                     except KeyError:
                         continue
-
+            if is_noted:
+                break
             current_time = 0
         return durations,velocities
     
     #================================================================================
     
-    def Parse(self, tick):
+    def Parse_perc(self, tick):
         dic, velocities = self.get_durations_and_velocities()
+        drum_ind = 0
+        for i in xrange(len(self.song.tracks)):
+            if self.is_percussion(self.song.tracks[i]):
+                drum_ind = i
+                break
+        pdic, pvelocities = self.get_durations_and_velocities(True, self.song.tracks[drum_ind])
         sorted_dic = self.sorting_by_value(dic)
+        psorted_dic = self.sorting_by_value(pdic)
         current_time = self.find_start()
         len_of_song = self.get_length() 
         result = []
         while current_time < len_of_song:
             vec = np.array([0]*128,dtype='float32')
-            vec_velocities  = np.array([0]*128,dtype='float32')
+            vec_velocities = np.array([0]*128, dtype='float32')
             for note in sorted_dic:
                 for i,interval in enumerate(sorted_dic[note]):
                     on_tick = interval[0]
@@ -157,9 +178,62 @@ class MidiParser():
                         else:
                             vec[note] = min((current_time-on_tick)/tick,1)
                             vec_velocities[note] = velocities[note][i]/127
-
-
             #result.append(np.append(vec, vec_velocities))
+            dvec = np.array([0] * 128, dtype='float32')
+            dvec_velocities = np.array([0] * 128, dtype='float32')
+            for note in sorted_dic:
+                for i, interval in enumerate(sorted_dic[note]):
+                    on_tick = interval[0]
+                    off_tick = interval[1]
+                    # note_duration = off_tick - on_tick
+                    if current_time < on_tick:
+                        break
+
+                    elif off_tick + tick < current_time:
+                        continue
+
+                    else:
+                        if current_time > off_tick:
+                            dvec[note] = ((current_time - off_tick) / tick)
+                            dvec_velocities[note] = pvelocities[note][i] / 127
+                            del psorted_dic[note][i]
+                        else:
+                            dvec[note] = min((current_time - on_tick) / tick, 1)
+                            dvec_velocities[note] = pvelocities[note][i] / 127
+
             current_time += tick
-            yield np.append(vec, vec_velocities)
-    
+            yield (np.append(vec, vec_velocities), np.append(dvec, dvec_velocities))
+
+            def Parse(self, tick):
+                dic, velocities = self.get_durations_and_velocities()
+                sorted_dic = self.sorting_by_value(dic)
+                current_time = self.find_start()
+                len_of_song = self.get_length()
+                result = []
+                while current_time < len_of_song:
+                    vec = np.array([0] * 128, dtype='float32')
+                    vec_velocities = np.array([0] * 128, dtype='float32')
+                    for note in sorted_dic:
+                        for i, interval in enumerate(sorted_dic[note]):
+                            on_tick = interval[0]
+                            off_tick = interval[1]
+                            # note_duration = off_tick - on_tick
+                            if current_time < on_tick:
+                                break
+
+                            elif off_tick + tick < current_time:
+                                continue
+
+                            else:
+                                if current_time > off_tick:
+                                    vec[note] = ((current_time - off_tick) / tick)
+                                    vec_velocities[note] = velocities[note][i] / 127
+                                    del sorted_dic[note][i]
+                                else:
+                                    vec[note] = min((current_time - on_tick) / tick, 1)
+                                    vec_velocities[note] = velocities[note][i] / 127
+
+                    # result.append(np.append(vec, vec_velocities))
+                    current_time += tick
+                    yield np.append(vec, vec_velocities)
+

@@ -25,8 +25,8 @@
       <file leaf-file-name="gym.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gym.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="180">
+              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="90">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -61,23 +61,24 @@
       <file leaf-file-name="operations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="131" column="24" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
+            <state relative-caret-position="542">
+              <caret line="204" column="84" selection-start-line="204" selection-start-column="84" selection-end-line="204" selection-end-column="84" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#7874#9478#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+            <state relative-caret-position="566">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-                <element signature="e#2567#2663#0" expanded="false" />
+                <element signature="e#3564#3660#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -93,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="properties.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="properties.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="108">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -113,12 +114,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test_lstm.py" />
-        <option value="$PROJECT_DIR$/operations.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/gym.py" />
-        <option value="$PROJECT_DIR$/data_generator.py" />
         <option value="$PROJECT_DIR$/properties.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/data_generator.py" />
+        <option value="$PROJECT_DIR$/operations.py" />
       </list>
     </option>
   </component>
@@ -152,6 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,8 +165,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,7 +424,49 @@
       <option name="project" value="LOCAL" />
       <updated>1472139098606</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ok">
+      <created>1472139105500</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1472139105500</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added useful scripts&#10;">
+      <created>1472199522548</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1472199522548</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added generate_percussion to operations.py">
+      <created>1472207475799</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1472207475799</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added generate_percussion to operations.py">
+      <created>1472211634474</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1472211634474</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added generate_percussion to operations.py">
+      <created>1472211638962</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1472211638962</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added generate_percussion to operations.py">
+      <created>1472211653700</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1472211653700</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -470,7 +513,9 @@
     <MESSAGE value="started training!" />
     <MESSAGE value="added spe property" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="added useful scripts&#10;" />
+    <MESSAGE value="added generate_percussion to operations.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added generate_percussion to operations.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,6 +570,7 @@
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#7874#9478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -535,7 +581,7 @@
           <caret line="24" column="25" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,6 +638,7 @@
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#7874#9478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -602,7 +649,7 @@
           <caret line="24" column="25" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,6 +706,7 @@
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#7874#9478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,7 +717,7 @@
           <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,6 +754,7 @@
           <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#7874#9478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -716,7 +765,7 @@
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,7 +802,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7254">
           <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7254">
           <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7254">
           <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="403" column="0" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,19 +919,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="131" column="24" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="90">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -894,42 +929,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gym.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        <state relative-caret-position="180">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_generator.py">
+    <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+        <state relative-caret-position="108">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2567#2663#0" expanded="false" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="542">
+          <caret line="204" column="84" selection-start-line="204" selection-start-column="84" selection-end-line="204" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#7874#9478#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#3564#3660#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

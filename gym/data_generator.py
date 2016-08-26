@@ -71,6 +71,27 @@ def generate_song_array(model):
     return res
 
 
+def generate_perc_prediction():
+    while True:
+        files = [each for each in listdir('midi') if each.endswith('.mid')]
+        for f in files:
+            parser = MidiParser('midi/' + f)
+            input_gen = parser.Parse(tick_length)
+            batches = np.zeros((num_seq_to_generate + 1, sequence_length + 1, input_size), dtype='float32')
+            batches_fill = 0
+            i = 0
+            for val in input_gen:
+                batches[batches_fill, i % (sequence_length + 1)] = val
+                if i % (sequence_length + 1) == sequence_length:
+                    batches_fill += 1
+                    if batches_fill == num_seq_to_generate + 1:
+                        yield (batches[:][:-1][:], batches[:][1:][:])
+                        batches = np.zeros((num_seq_to_generate + 1, sequence_length + 1, input_size),
+                                           dtype='float32')
+                        batches_fill = 0
+                    continue
+                i += 1
+
 def is_empty(intervals):
     for el in intervals:
         if len(intervals[el]) > 0:
