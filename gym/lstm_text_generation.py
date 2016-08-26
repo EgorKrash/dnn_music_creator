@@ -16,13 +16,17 @@ from keras.utils.data_utils import get_file
 import numpy as np
 import random
 import sys
+from os import listdir
 
 from music21 import converter
-c = converter.parse('midi1/a.mid')
+
+maxlen = 40
+step = 3
 
 text = ''
+parsed = converter.parse('midi/abide_.mid')
 
-for thisNote in c.recurse().notes:
+for thisNote in parsed.recurse().notes:
     for pitch in thisNote.pitches:
         text += pitch.name
     text += 'z'
@@ -35,8 +39,7 @@ char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
 # cut the text in semi-redundant sequences of maxlen characters
-maxlen = 40
-step = 3
+
 sentences = []
 next_chars = []
 for i in range(0, len(text) - maxlen, step):
@@ -52,12 +55,46 @@ for i, sentence in enumerate(sentences):
         X[i, t, char_indices[char]] = 1
     y[i, char_indices[next_chars[i]]] = 1
 
+print ('Gettng data')
+def generate_text():
+    while True:
+        files = [each for each in listdir('midi') if each.endswith('.mid')]
+        for i, fi in enumerate(files):
+            text = ''
+            print(fi)
+            parsed = converter.parse('midi/'+fi)
+
+            for thisNote in parsed.recurse().notes:
+                for pitch in thisNote.pitches:
+                    text += pitch.name
+                text += 'z'
+
+            print('corpus length:', len(text))
+            # cut the text in semi-redundant sequences of maxlen characters
+
+            sentences = []
+            next_chars = []
+            for i in range(0, len(text) - maxlen, step):
+                sentences.append(text[i: i + maxlen])
+                next_chars.append(text[i + maxlen])
+            print('nb sequences:', len(sentences))
+
+            print('Vectorization...')
+            X = np.zeros((len(sentences), maxlen, len(chars)), dtype=np.bool)
+            y = np.zeros((len(sentences), len(chars)), dtype=np.bool)
+            for i, sentence in enumerate(sentences):
+                for t, char in enumerate(sentence):
+                    X[i, t, char_indices[char]] = 1
+                y[i, char_indices[next_chars[i]]] = 1
+            yield (X,y)
+
 
 # build the model: a single LSTM
 print('Build model...')
 model = Sequential()
 model.add(LSTM(128, input_shape=(maxlen, len(chars))))
 model.add(Dense(len(chars)))
+print (len(chars))
 model.add(Activation('softmax'))
 
 optimizer = RMSprop(lr=0.01)
@@ -74,11 +111,11 @@ def sample(preds, temperature=1.0):
     return np.argmax(probas)
 
 # train the model, output generated text after each iteration
-for iteration in range(1, 60):
+for iteration in range(1, 10):
     print()
     print('-' * 50)
     print('Iteration', iteration)
-    model.fit(X, y, batch_size=128, nb_epoch=1)
+    model.fit_generator(generate_text(), 100, nb_epoch=1)
 
     start_index = random.randint(0, len(text) - maxlen - 1)
 

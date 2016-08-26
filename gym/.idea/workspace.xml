@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="601e13fd-581a-45f3-a0ce-a9ed6ecd112a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm_text_generation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net_dump.nw" afterPath="$PROJECT_DIR$/net_dump.nw" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_generator.py" afterPath="$PROJECT_DIR$/data_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/properties.py" afterPath="$PROJECT_DIR$/properties.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lstm_text_generation.py" afterPath="$PROJECT_DIR$/lstm_text_generation.py" />
     </list>
     <ignored path="gym.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +74,8 @@
       <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+            <state relative-caret-position="198">
+              <caret line="11" column="75" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="75" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
                 <element signature="e#2626#2722#0" expanded="false" />
@@ -110,8 +107,8 @@
       <file leaf-file-name="lstm_text_generation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lstm_text_generation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+            <state relative-caret-position="1106">
+              <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
               <folding>
                 <element signature="e#359#396#0" expanded="true" />
               </folding>
@@ -464,12 +461,19 @@
       <option name="project" value="LOCAL" />
       <updated>1472139105500</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ok">
+      <created>1472228948589</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1472228948589</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -931,6 +935,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#2626#2722#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gym.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -941,29 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#2626#2722#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lstm_text_generation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        <state relative-caret-position="1106">
+          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="e#359#396#0" expanded="true" />
           </folding>
