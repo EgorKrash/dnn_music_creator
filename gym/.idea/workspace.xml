@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="601e13fd-581a-45f3-a0ce-a9ed6ecd112a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_generator.py" afterPath="$PROJECT_DIR$/data_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operations.py" afterPath="$PROJECT_DIR$/operations.py" />
     </list>
     <ignored path="gym.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operations.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="operations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operations.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="542">
@@ -73,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="494">
               <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -440,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472199522548</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added generate_percussion to operations.py">
+      <created>1472207475799</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1472207475799</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -488,7 +493,8 @@
     <MESSAGE value="added spe property" />
     <MESSAGE value="ok" />
     <MESSAGE value="added useful scripts&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added useful scripts&#10;" />
+    <MESSAGE value="added generate_percussion to operations.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added generate_percussion to operations.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,17 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <element signature="e#3564#3660#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/operations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -948,6 +943,17 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <element signature="e#7874#9478#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#3564#3660#0" expanded="false" />
           </folding>
         </state>
       </provider>
