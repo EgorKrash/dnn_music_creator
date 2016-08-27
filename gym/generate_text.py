@@ -4,6 +4,7 @@ from getting_midi_from_string import StringConverter
 from keras.models import load_model
 from text_model import generate_song
 import sys
+from os import system
 
 model = load_model('model_dump.h5py')
 
@@ -13,9 +14,13 @@ print("Generating song")
 converter = StringConverter(generate_song(model))
 
 file_path = 'generated.mid'
-if len(sys.argv) > 0:
-    print('saving to:', sys.argv[0])
-    file_path = sys.argv[0]
+if len(sys.argv) > 1:
+    print('saving to:', sys.argv[1])
+    file_path = sys.argv[1]
 else:
     print('No file path given. Saving to out.mid')
-converter.save(file_path)
+if file_path.endswith('.mid'):
+    converter.save(file_path)
+else:
+    converter.save('tmp.mid')
+    system('./convert_to_mp3.sh tmp.mid '+file_path)

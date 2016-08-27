@@ -9,11 +9,16 @@ def home(request):
     context['a'] = a
     return render(request, 'sender/index.html', context)
 
+
+exec_dict = {}
 def api_music(request):
 	a = request.GET.get('a', '')
 	if os.path.exists('static/music/' + a + '.mp3') == True:
 		return JsonResponse({'a': a, 'status': "OK", 'url': 'static/' + a +'.mp3'})
 	else:
+		if not a in exec_dict:
+			exec_dict[a] = 1
+			os.system('python ../../gym/generate_text.py /root/Hathor/static/music/'+ a +'.mp3')
 		return JsonResponse({'a': a, 'status':"FAIL jj"})
 	
 
