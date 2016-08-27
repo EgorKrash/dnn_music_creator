@@ -114,7 +114,7 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
-def generate_song(diversity):
+def generate_song(model, diversity=1.0, length=1000):
     start_index = random.randint(0, len(text) - maxlen - 1)
     print()
     print('----- diversity:', diversity)
@@ -123,7 +123,7 @@ def generate_song(diversity):
     generated += sentence
     print('----- Generating with seed: "' + sentence + '"')
     sys.stdout.write(generated)
-    for i in range(400):
+    for i in range(length):
         x = np.zeros((1, maxlen, len(chars)))
         for t, char in enumerate(sentence):
             x[0, t, char_indices[char]] = 1.
