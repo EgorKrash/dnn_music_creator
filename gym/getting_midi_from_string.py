@@ -11,7 +11,17 @@ class StringConverter():
         self.notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
         self.text_to_dur = {'l': 'whole', 'k': 'half', 'h': 'quarter', 'p': 'eighth',
-                       'o': '16th', 'i': '32th', 'u': 'zero', 'y': 'longa'}
+                       'o': '16th', 'u': 'zero', 'y': 'longa'}
+
+    def find_dur(self,crd):
+
+        i = len(crd)-1
+
+        while i > 0:
+            if crd[i] in self.text_to_dur:
+                return crd[i]
+            i -= 1
+        return 'h'
 
     def fix(self, inp_crd):
         out_text = ''
@@ -20,7 +30,7 @@ class StringConverter():
         special = ''
         letter = 0
 
-        duration = self.text_to_dur[inp_crd[-1]]
+        duration = self.text_to_dur[self.find_dur(inp_crd)]
 
         while letter < len(inp_crd):
             if inp_crd[letter] in self.notes:
