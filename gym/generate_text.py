@@ -4,7 +4,6 @@ from getting_midi_from_string import StringConverter
 from keras.models import load_model
 from text_model import generate_song
 import sys
-import getopt
 
 model = load_model('model_dump.h5py')
 
