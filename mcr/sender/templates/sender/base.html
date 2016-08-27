@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}{% endblock %}</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+     
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'sender/base.css' %}"/>
+	<script type="text/javascript" src="{% static 'sender/base.js' %}"></script>
+
+
+</head>
+<body>
+
+<div id="menu_btn"><div id="menu_btn_shape"></div></div>
+<div id="menu">
+	<ul>
+		<li> <a href="/sender" class='menu_link'>Home</a></li>
+		<li><a href="/sender/music" class='menu_link'>Music</a></li>
+		<li><a href="/sender/about" class='menu_link'>About</a></li>
+		<li><a href="/sender/github" class='menu_link'>GitHub</a></li>
+	</ul>
+</div>
+
+{% block content %}{% endblock %}
+</body>
+</html>

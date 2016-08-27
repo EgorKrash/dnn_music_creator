@@ -1,0 +1,26 @@
+{% extends 'sender/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'sender/style.css' %}"/>
+<script type="text/javascript" src="{% static 'sender/script.js' %}"></script>
+<script type="text/javascript" src="{% static 'sender/JQueryRotate.js' %}"></script>
+<div id="player">
+	<div id="reset">
+		<div id='reset_circle'></div>
+	</div>
+	<div id="sound">
+		<div id="dinamic"></div>
+		<div id="mute_x"></div>
+	</div>
+	<div id="player_circle">
+		<div id="play_triangle"></div>
+		<div  id="pause_sticks"></div>
+		<div id="wait"></div>
+	</div>
+</div>
+
+{% endblock %}
