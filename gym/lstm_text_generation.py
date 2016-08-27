@@ -8,7 +8,7 @@ has at least ~100k characters. ~1M is better.
 '''
 
 from __future__ import print_function
-from text_model import *
+from net import *
 
 # train the model, output generated text after each iteration
 for iteration in range(1, 11):

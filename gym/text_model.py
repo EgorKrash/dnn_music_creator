@@ -89,22 +89,6 @@ def generate_text(chars):
                     X = np.zeros((generate_per_batch, maxlen, len(chars)), dtype=np.bool)
                     y = np.zeros((generate_per_batch, len(chars)), dtype=np.bool)
 
-
-
-# build the model: a single LSTM
-print('Build model...')
-model = Sequential()
-model.add(LSTM(128, input_shape=(maxlen, len(chars)), return_sequences=True))
-model.add(LSTM(128))
-model.add(Dense(len(chars)))
-print (len(chars))
-model.add(Activation('softmax'))
-
-optimizer = RMSprop(lr=0.01)
-model.compile(loss='categorical_crossentropy', optimizer=optimizer)
-
-model.save('model_dump.h5py')
-
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
     preds = np.asarray(preds).astype('float64')
@@ -114,7 +98,7 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
-def generate_song(diversity):
+def generate_song(model, diversity=1.0, length=1000):
     start_index = random.randint(0, len(text) - maxlen - 1)
     print()
     print('----- diversity:', diversity)
@@ -123,7 +107,7 @@ def generate_song(diversity):
     generated += sentence
     print('----- Generating with seed: "' + sentence + '"')
     sys.stdout.write(generated)
-    for i in range(400):
+    for i in range(length):
         x = np.zeros((1, maxlen, len(chars)))
         for t, char in enumerate(sentence):
             x[0, t, char_indices[char]] = 1.
