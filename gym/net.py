@@ -13,3 +13,4 @@ optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
 model.save('model_dump.h5py')
+#
