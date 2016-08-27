@@ -2,7 +2,6 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
 from keras.optimizers import RMSprop
-from keras.utils.data_utils import get_file
 import numpy as np
 from music21 import converter
 import random
@@ -104,6 +103,7 @@ model.add(Activation('softmax'))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
+model.save('model_dump.h5py')
 
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
