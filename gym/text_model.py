@@ -94,8 +94,8 @@ def generate_text(chars):
 # build the model: a single LSTM
 print('Build model...')
 model = Sequential()
-model.add(LSTM(512, input_shape=(maxlen, len(chars)), return_sequences=True))
-model.add(LSTM(512 ))
+model.add(LSTM(128, input_shape=(maxlen, len(chars)), return_sequences=True))
+model.add(LSTM(128))
 model.add(Dense(len(chars)))
 print (len(chars))
 model.add(Activation('softmax'))
