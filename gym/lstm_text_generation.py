@@ -26,10 +26,13 @@ step = 3
 text = ''
 parsed = converter.parse('midi/abide_.mid')
 
+dur_to_text = {'whole': 'l', 'half': 'k', 'quarter': 'h', 'eighth': 'p', '16th': 'o', '32th': 'i', 'zero':'u'}
+text_to_dur = {'l': 'whole', 'k': 'half', 'h': 'quarter', 'p': 'eighth', 'o': '16th', 'i': '32th', 'u': 'zero'}
+
 for thisNote in parsed.recurse().notes:
     for pitch in thisNote.pitches:
-        text += pitch.name
-    text += 'z'
+        text += pitch.name+str(pitch.octave)
+    text += dur_to_text[thisNote.duration.type]+'z'
 
 print('corpus length:', len(text))
 
@@ -100,6 +103,7 @@ model.add(Activation('softmax'))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
+model.load_weights('text-model.h5py')
 
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
@@ -111,11 +115,12 @@ def sample(preds, temperature=1.0):
     return np.argmax(probas)
 
 # train the model, output generated text after each iteration
-for iteration in range(1, 10):
+for iteration in range(1, 1000):
     print()
     print('-' * 50)
     print('Iteration', iteration)
     model.fit_generator(generate_text(), 1720, nb_epoch=1)
+    model.save_weights('text-model.h5py')
 
     start_index = random.randint(0, len(text) - maxlen - 1)
 
