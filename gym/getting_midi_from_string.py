@@ -13,37 +13,35 @@ class StringConverter():
         self.text_to_dur = {'l': 'whole', 'k': 'half', 'h': 'quarter', 'p': 'eighth',
                        'o': '16th', 'i': '32th', 'u': 'zero', 'y': 'longa'}
 
-    def fix(self):
-        inp_text = self.inp_text
+    def fix(self, inp_crd):
         out_text = ''
         was_special = False
         was_note = -1
         special = ''
         letter = 0
 
-        duration = self.text_to_dur[inp_text[-1]]
+        duration = self.text_to_dur[inp_crd[-1]]
 
-        while letter < len(inp_text):
-
-            if inp_text[letter] in self.notes:
+        while letter < len(inp_crd):
+            if inp_crd[letter] in self.notes:
                 was_note = letter
                 # print(was_note,inp_text[was_note])
 
-            elif was_note >= 0 and (inp_text[letter] is '-' or inp_text[letter] is '#'):
+            elif was_note >= 0 and (inp_crd[letter] is '-' or inp_crd[letter] is '#'):
                 # print(inp_text[letter])
                 if not was_special:
-                    if inp_text[letter] is '-':
+                    if inp_crd[letter] is '-':
                         special = '-'
                         was_special = True
                     else:
                         special = '#'
                         was_special = True
 
-            elif inp_text[letter].isdigit():
+            elif inp_crd[letter].isdigit():
                 # print('isdig')
                 if was_note >= 0:
 
-                    place = inp_text[was_note] + special + inp_text[letter] + ' '
+                    place = inp_crd[was_note] + special + inp_crd[letter] + ' '
                     # print(inp_text[was_note])
                     out_text += place
 
