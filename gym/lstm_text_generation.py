@@ -20,23 +20,35 @@ from os import listdir
 
 from music21 import converter
 
-maxlen = 40
+maxlen = 100
 step = 3
 
 text = ''
 parsed = converter.parse('midi/abide_.mid')
 
-dur_to_text = {'whole': 'l', 'half': 'k', 'quarter': 'h', 'eighth': 'p', '16th': 'o', '32th': 'i', 'zero':'u'}
-text_to_dur = {'l': 'whole', 'k': 'half', 'h': 'quarter', 'p': 'eighth', 'o': '16th', 'i': '32th', 'u': 'zero'}
+_dur_to_text = {'whole': 'l', 'half': 'k', 'quarter': 'h', 'eighth': 'p', '16th': 'o', '32th': 'i', 'zero': 'u','longa': 'y', 'complex': 'i'}
+text_to_dur = {'l': 'whole', 'k': 'half', 'h': 'quarter', 'p': 'eighth', 'o': '16th', 'i': '32th', 'u': 'zero', 'y': 'longa'}
+
+def dur_to_text(dur):
+    if dur in _dur_to_text:
+        return _dur_to_text[dur]
+    else:
+        return _dur_to_text['quarter']
+
 
 for thisNote in parsed.recurse().notes:
     for pitch in thisNote.pitches:
         text += pitch.name+str(pitch.octave)
-    text += dur_to_text[thisNote.duration.type]+'z'
+    text += dur_to_text(thisNote.duration.type)+'z'
 
 print('corpus length:', len(text))
 
-chars = sorted(list(set(text)))
+#chars = sorted(list(set(text)))
+
+chars = sorted(list(set('ABCDEFG1234567890lkjhpoiu-#zy')))
+
+print(chars)
+
 print('total chars:', len(chars))
 char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
@@ -64,15 +76,15 @@ def generate_text():
         files = [each for each in listdir('midi') if each.endswith('.mid')]
         for i, fi in enumerate(files):
             text = ''
-            #print(fi)
+            print(fi)
             parsed = converter.parse('midi/'+fi)
 
             for thisNote in parsed.recurse().notes:
                 for pitch in thisNote.pitches:
-                    text += pitch.name
-                text += 'z'
+                    text += pitch.name + str(pitch.octave)
+                text += dur_to_text(thisNote.duration.type) + 'z'
 
-            #print('corpus length:', len(text))
+            print('corpus length:', len(text))
             # cut the text in semi-redundant sequences of maxlen characters
 
             sentences = []
@@ -80,7 +92,7 @@ def generate_text():
             for i in range(0, len(text) - maxlen, step):
                 sentences.append(text[i: i + maxlen])
                 next_chars.append(text[i + maxlen])
-            #print('nb sequences:', len(sentences))
+            print('nb sequences:', len(sentences))
 
             #print('Vectorization...')
             X = np.zeros((len(sentences), maxlen, len(chars)), dtype=np.bool)
@@ -89,7 +101,8 @@ def generate_text():
                 for t, char in enumerate(sentence):
                     X[i, t, char_indices[char]] = 1
                 y[i, char_indices[next_chars[i]]] = 1
-            yield ([X],[y])
+            print (len(X[0]),len(y[0]))
+            yield (X,y)
 
 
 # build the model: a single LSTM
@@ -104,6 +117,9 @@ optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
 model.load_weights('text-model.h5py')
+
+for gen in generate_text():
+    print ('new')
 
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
