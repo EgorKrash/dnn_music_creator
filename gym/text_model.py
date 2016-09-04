@@ -1,7 +1,3 @@
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
-from keras.layers import LSTM
-from keras.optimizers import RMSprop
 import numpy as np
 from music21 import converter
 import random

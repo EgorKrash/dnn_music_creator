@@ -1,9 +1,13 @@
 # build the model: a single LSTM
+from keras.models import Sequential
+from keras.layers import Dense, Activation
+from keras.layers import LSTM
+from keras.optimizers import RMSprop
 from text_model import *
 print('Build model...')
 model = Sequential()
 model.add(LSTM(512, input_shape=(maxlen, len(chars)), return_sequences=True))
-model.add(LSTM(512 ))
+model.add(LSTM(512))
 model.add(Dense(len(chars)))
 print (len(chars))
 model.add(Activation('softmax'))

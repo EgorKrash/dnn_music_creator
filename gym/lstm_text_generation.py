@@ -9,9 +9,13 @@ has at least ~100k characters. ~1M is better.
 
 from __future__ import print_function
 from net import *
+from os.path import isfile
+
+if isfile('text_model_saved.h5py'):
+    model.load_weights('text_model_saved.h5py')
 
 # train the model, output generated text after each iteration
-for iteration in range(1, 11):
+for iteration in range(1, 110):
     print()
     print('-' * 50)
     print('Iteration', iteration)

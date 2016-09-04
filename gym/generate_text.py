@@ -20,7 +20,7 @@ if len(sys.argv) > 1:
 else:
     print("No file path given. Saving to out.mid")
 
-tmp_path = '/tmp/' + file_path.split('/')[-1].split('.')[0]+'.mid'
+tmp_path = 'tmp/' + file_path.split('/')[-1].split('.')[0]+'.mid'
 
 if file_path.endswith('.mid'):
     converter.save(file_path)
