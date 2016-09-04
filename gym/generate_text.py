@@ -13,14 +13,17 @@ model.load_weights('text_model_saved.h5py')
 print("Generating song")
 converter = StringConverter(generate_song(model))
 
-file_path = 'generated.mid'
+file_path = 'out.mid'
 if len(sys.argv) > 1:
     print('saving to:', sys.argv[1])
     file_path = sys.argv[1]
 else:
-    print('No file path given. Saving to out.mid')
+    print("No file path given. Saving to out.mid")
+
+tmp_path = '/tmp/' + file_path.split('/')[-1].split('.')[0]+'.mid'
+
 if file_path.endswith('.mid'):
     converter.save(file_path)
 else:
-    converter.save('tmp.mid')
-    system('./convert_to_mp3.sh tmp.mid '+file_path)
+    converter.save(tmp_path)
+    system('./convert_to_mp3.sh ' + tmp_path + ' ' + file_path)

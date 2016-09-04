@@ -2,10 +2,277 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="601e13fd-581a-45f3-a0ce-a9ed6ecd112a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model_dump.h5py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text_model_saved.h5py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Hathor.pdf" afterPath="$PROJECT_DIR$/../Hathor.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/1stnoel_.mid" afterPath="$PROJECT_DIR$/midi/1stnoel_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Barbie_.mid" afterPath="$PROJECT_DIR$/midi/Barbie_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Because_.mid" afterPath="$PROJECT_DIR$/midi/Because_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Britney-Spears_Baby-One-More-Time_.mid" afterPath="$PROJECT_DIR$/midi/Britney-Spears_Baby-One-More-Time_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Destin_.kar" afterPath="$PROJECT_DIR$/midi/Destin_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/I Dont Know_.kar" afterPath="$PROJECT_DIR$/midi/I Dont Know_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/If You Asked Me To_.kar" afterPath="$PROJECT_DIR$/midi/If You Asked Me To_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Je Sais Pas_.kar" afterPath="$PROJECT_DIR$/midi/Je Sais Pas_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Just Walk Away_.kar" afterPath="$PROJECT_DIR$/midi/Just Walk Away_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Power_.kar" afterPath="$PROJECT_DIR$/midi/Power_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Titanic_.kar" afterPath="$PROJECT_DIR$/midi/Titanic_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/To Love You More_.kar" afterPath="$PROJECT_DIR$/midi/To Love You More_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Vole_.kar" afterPath="$PROJECT_DIR$/midi/Vole_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/Zora Sourit_.kar" afterPath="$PROJECT_DIR$/midi/Zora Sourit_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/abide_.mid" afterPath="$PROJECT_DIR$/midi/abide_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/adeline_.mid" afterPath="$PROJECT_DIR$/midi/adeline_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/alkan_variations_sur_un_theme_de_steibelt_1_(c)yogore.mid" afterPath="$PROJECT_DIR$/midi/alkan_variations_sur_un_theme_de_steibelt_1_(c)yogore.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/allemand.mid" afterPath="$PROJECT_DIR$/midi/allemand.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/amazingg_.mid" afterPath="$PROJECT_DIR$/midi/amazingg_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/amerbeau_.mid" afterPath="$PROJECT_DIR$/midi/amerbeau_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/america_.mid" afterPath="$PROJECT_DIR$/midi/america_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/amertheb.mid" afterPath="$PROJECT_DIR$/midi/amertheb.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/angelswe_.mid" afterPath="$PROJECT_DIR$/midi/angelswe_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/anythgo_.mid" afterPath="$PROJECT_DIR$/midi/anythgo_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/attract.mid" afterPath="$PROJECT_DIR$/midi/attract.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/auldlang_.mid" afterPath="$PROJECT_DIR$/midi/auldlang_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/avemaria_.mid" afterPath="$PROJECT_DIR$/midi/avemaria_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/awayina_.mid" afterPath="$PROJECT_DIR$/midi/awayina_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/aweigh_.mid" afterPath="$PROJECT_DIR$/midi/aweigh_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/awholenw_.mid" afterPath="$PROJECT_DIR$/midi/awholenw_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/awickedm_.mid" afterPath="$PROJECT_DIR$/midi/awickedm_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/babyilov_.mid" afterPath="$PROJECT_DIR$/midi/babyilov_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ballgame_.mid" afterPath="$PROJECT_DIR$/midi/ballgame_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bandplon_.mid" afterPath="$PROJECT_DIR$/midi/bandplon_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bashanah_.mid" afterPath="$PROJECT_DIR$/midi/bashanah_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/because_.mid" afterPath="$PROJECT_DIR$/midi/because_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bhymnrep_.mid" afterPath="$PROJECT_DIR$/midi/bhymnrep_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bicycle2_.mid" afterPath="$PROJECT_DIR$/midi/bicycle2_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/billbail_.mid" afterPath="$PROJECT_DIR$/midi/billbail_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/billyboy_.mid" afterPath="$PROJECT_DIR$/midi/billyboy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bingo_.mid" afterPath="$PROJECT_DIR$/midi/bingo_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/blues4cp.mid" afterPath="$PROJECT_DIR$/midi/blues4cp.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bordrlin_.mid" afterPath="$PROJECT_DIR$/midi/bordrlin_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/breakout_.mid" afterPath="$PROJECT_DIR$/midi/breakout_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bridge_.mid" afterPath="$PROJECT_DIR$/midi/bridge_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/broadway_.mid" afterPath="$PROJECT_DIR$/midi/broadway_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/brownjug_.mid" afterPath="$PROJECT_DIR$/midi/brownjug_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bsonata1.mid" afterPath="$PROJECT_DIR$/midi/bsonata1.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/bsonata4.mid" afterPath="$PROJECT_DIR$/midi/bsonata4.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/btmdown_.mid" afterPath="$PROJECT_DIR$/midi/btmdown_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/c_bells_.mid" afterPath="$PROJECT_DIR$/midi/c_bells_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/caissons_.mid" afterPath="$PROJECT_DIR$/midi/caissons_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/canufeel_.mid" afterPath="$PROJECT_DIR$/midi/canufeel_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/carillon.mid" afterPath="$PROJECT_DIR$/midi/carillon.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/carisort.mid" afterPath="$PROJECT_DIR$/midi/carisort.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/celebrat_.mid" afterPath="$PROJECT_DIR$/midi/celebrat_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/chagpur_.mid" afterPath="$PROJECT_DIR$/midi/chagpur_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/chestnut (1).mid" afterPath="$PROJECT_DIR$/midi/chestnut (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/chestnut.mid" afterPath="$PROJECT_DIR$/midi/chestnut.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/clear_.mid" afterPath="$PROJECT_DIR$/midi/clear_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/clemtine_.mid" afterPath="$PROJECT_DIR$/midi/clemtine_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/closerw_.mid" afterPath="$PROJECT_DIR$/midi/closerw_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/courante.mid" afterPath="$PROJECT_DIR$/midi/courante.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/coventry_.mid" afterPath="$PROJECT_DIR$/midi/coventry_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/crazy_.mid" afterPath="$PROJECT_DIR$/midi/crazy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/crocodile_.mid" afterPath="$PROJECT_DIR$/midi/crocodile_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/crusader_.mid" afterPath="$PROJECT_DIR$/midi/crusader_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/cucarach_.mid" afterPath="$PROJECT_DIR$/midi/cucarach_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dancin_days_.mid" afterPath="$PROJECT_DIR$/midi/dancin_days_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dayenu_.mid" afterPath="$PROJECT_DIR$/midi/dayenu_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/deckhall_.mid" afterPath="$PROJECT_DIR$/midi/deckhall_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/delilah (1).mid" afterPath="$PROJECT_DIR$/midi/delilah (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/delilah.mid" afterPath="$PROJECT_DIR$/midi/delilah.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/divtune (1).mid" afterPath="$PROJECT_DIR$/midi/divtune (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/divtune.mid" afterPath="$PROJECT_DIR$/midi/divtune.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dontbe_.mid" afterPath="$PROJECT_DIR$/midi/dontbe_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dp_river_.mid" afterPath="$PROJECT_DIR$/midi/dp_river_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dreidl_.mid" afterPath="$PROJECT_DIR$/midi/dreidl_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/dwnunder_.mid" afterPath="$PROJECT_DIR$/midi/dwnunder_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/el_word.mid" afterPath="$PROJECT_DIR$/midi/el_word.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/engcarol_.mid" afterPath="$PROJECT_DIR$/midi/engcarol_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/famties.mid" afterPath="$PROJECT_DIR$/midi/famties.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/fanfare.mid" afterPath="$PROJECT_DIR$/midi/fanfare.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/farmdell_.mid" afterPath="$PROJECT_DIR$/midi/farmdell_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/fgcarols_.mid" afterPath="$PROJECT_DIR$/midi/fgcarols_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/finalb.mid" afterPath="$PROJECT_DIR$/midi/finalb.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/firerain_.mid" afterPath="$PROJECT_DIR$/midi/firerain_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/fldsgold_.mid" afterPath="$PROJECT_DIR$/midi/fldsgold_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/flyeagle_.mid" afterPath="$PROJECT_DIR$/midi/flyeagle_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/frankie_.mid" afterPath="$PROJECT_DIR$/midi/frankie_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/friendin.mid" afterPath="$PROJECT_DIR$/midi/friendin.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/fuguegig.mid" afterPath="$PROJECT_DIR$/midi/fuguegig.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/gavotte.mid" afterPath="$PROJECT_DIR$/midi/gavotte.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/gigue.mid" afterPath="$PROJECT_DIR$/midi/gigue.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/go_downm_.mid" afterPath="$PROJECT_DIR$/midi/go_downm_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/goodking_.mid" afterPath="$PROJECT_DIR$/midi/goodking_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/gotellit_.mid" afterPath="$PROJECT_DIR$/midi/gotellit_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/grandof_.mid" afterPath="$PROJECT_DIR$/midi/grandof_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/greatest_.mid" afterPath="$PROJECT_DIR$/midi/greatest_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hailtoch_.mid" afterPath="$PROJECT_DIR$/midi/hailtoch_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hanukka_.mid" afterPath="$PROJECT_DIR$/midi/hanukka_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/harkthe_.mid" afterPath="$PROJECT_DIR$/midi/harkthe_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hatikva_.mid" afterPath="$PROJECT_DIR$/midi/hatikva_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/havahnag_.mid" afterPath="$PROJECT_DIR$/midi/havahnag_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/haveuevr_.mid" afterPath="$PROJECT_DIR$/midi/haveuevr_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/he_shall_.mid" afterPath="$PROJECT_DIR$/midi/he_shall_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hellomy_.mid" afterPath="$PROJECT_DIR$/midi/hellomy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hesgot_.mid" afterPath="$PROJECT_DIR$/midi/hesgot_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hevenush_.mid" afterPath="$PROJECT_DIR$/midi/hevenush_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hinaymat_.mid" afterPath="$PROJECT_DIR$/midi/hinaymat_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/holiday_.mid" afterPath="$PROJECT_DIR$/midi/holiday_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/homerang_.mid" afterPath="$PROJECT_DIR$/midi/homerang_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hushbaby_.mid" afterPath="$PROJECT_DIR$/midi/hushbaby_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hymnmed1_.mid" afterPath="$PROJECT_DIR$/midi/hymnmed1_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/hymnmed2_.mid" afterPath="$PROJECT_DIR$/midi/hymnmed2_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ifhappy_.mid" afterPath="$PROJECT_DIR$/midi/ifhappy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ifieverl_.mid" afterPath="$PROJECT_DIR$/midi/ifieverl_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ihbells_.mid" afterPath="$PROJECT_DIR$/midi/ihbells_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/input.mid" afterPath="$PROJECT_DIR$/midi/input.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/insummer_.mid" afterPath="$PROJECT_DIR$/midi/insummer_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/inthewin_.mid" afterPath="$PROJECT_DIR$/midi/inthewin_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/j_jacob_.mid" afterPath="$PROJECT_DIR$/midi/j_jacob_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/jeloveme_.mid" afterPath="$PROJECT_DIR$/midi/jeloveme_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/jesujoy_.mid" afterPath="$PROJECT_DIR$/midi/jesujoy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/jingbell_.mid" afterPath="$PROJECT_DIR$/midi/jingbell_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/johnhome_.mid" afterPath="$PROJECT_DIR$/midi/johnhome_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/jollyfel_.mid" afterPath="$PROJECT_DIR$/midi/jollyfel_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/jollyold_.mid" afterPath="$PROJECT_DIR$/midi/jollyold_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/joshua_.mid" afterPath="$PROJECT_DIR$/midi/joshua_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/joyful_.mid" afterPath="$PROJECT_DIR$/midi/joyful_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/joyworld_.mid" afterPath="$PROJECT_DIR$/midi/joyworld_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/lonbridg_.mid" afterPath="$PROJECT_DIR$/midi/lonbridg_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/manger2_.mid" afterPath="$PROJECT_DIR$/midi/manger2_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/marines_.mid" afterPath="$PROJECT_DIR$/midi/marines_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/mary_.mid" afterPath="$PROJECT_DIR$/midi/mary_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/memory_.mid" afterPath="$PROJECT_DIR$/midi/memory_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/menuets.mid" afterPath="$PROJECT_DIR$/midi/menuets.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/mindexpl.mid" afterPath="$PROJECT_DIR$/midi/mindexpl.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/misty_np (1).mid" afterPath="$PROJECT_DIR$/midi/misty_np (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/misty_np.mid" afterPath="$PROJECT_DIR$/midi/misty_np.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/morena_.mid" afterPath="$PROJECT_DIR$/midi/morena_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/morning_.mid" afterPath="$PROJECT_DIR$/midi/morning_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/mulburyb_.mid" afterPath="$PROJECT_DIR$/midi/mulburyb_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/musoffer.mid" afterPath="$PROJECT_DIR$/midi/musoffer.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/mybonnie_.mid" afterPath="$PROJECT_DIR$/midi/mybonnie_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/myhat3co_.mid" afterPath="$PROJECT_DIR$/midi/myhat3co_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/myway_ (1).mid" afterPath="$PROJECT_DIR$/midi/myway_ (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/myway_.mid" afterPath="$PROJECT_DIR$/midi/myway_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ochrtree_.mid" afterPath="$PROJECT_DIR$/midi/ochrtree_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ocomeall_.mid" afterPath="$PROJECT_DIR$/midi/ocomeall_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/odenathen (1).mid" afterPath="$PROJECT_DIR$/midi/odenathen (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/odenathen.mid" afterPath="$PROJECT_DIR$/midi/odenathen.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/oholy2_.mid" afterPath="$PROJECT_DIR$/midi/oholy2_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/oholyni_.mid" afterPath="$PROJECT_DIR$/midi/oholyni_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/oldmacd_.mid" afterPath="$PROJECT_DIR$/midi/oldmacd_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/olittle_.mid" afterPath="$PROJECT_DIR$/midi/olittle_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/onwardch_.mid" afterPath="$PROJECT_DIR$/midi/onwardch_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/osuzanna_.mid" afterPath="$PROJECT_DIR$/midi/osuzanna_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/output.mp3" afterPath="$PROJECT_DIR$/midi/output.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/overture.mid" afterPath="$PROJECT_DIR$/midi/overture.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ovriver_.mid" afterPath="$PROJECT_DIR$/midi/ovriver_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/pastoral_.mid" afterPath="$PROJECT_DIR$/midi/pastoral_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/pollywol_.mid" afterPath="$PROJECT_DIR$/midi/pollywol_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/railroad_.mid" afterPath="$PROJECT_DIR$/midi/railroad_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/rejectio.mid" afterPath="$PROJECT_DIR$/midi/rejectio.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/restyou_.mid" afterPath="$PROJECT_DIR$/midi/restyou_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/rockages_.mid" afterPath="$PROJECT_DIR$/midi/rockages_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/rockclef_.mid" afterPath="$PROJECT_DIR$/midi/rockclef_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/rockytop_.mid" afterPath="$PROJECT_DIR$/midi/rockytop_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/rose_.kar" afterPath="$PROJECT_DIR$/midi/rose_.kar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ruggedcr_.mid" afterPath="$PROJECT_DIR$/midi/ruggedcr_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/sailing_.mid" afterPath="$PROJECT_DIR$/midi/sailing_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/saintsgo_.mid" afterPath="$PROJECT_DIR$/midi/saintsgo_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/searay.mid" afterPath="$PROJECT_DIR$/midi/searay.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/serso_.mid" afterPath="$PROJECT_DIR$/midi/serso_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/shabshal_.mid" afterPath="$PROJECT_DIR$/midi/shabshal_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/shalomch_.mid" afterPath="$PROJECT_DIR$/midi/shalomch_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/shebeco_.mid" afterPath="$PROJECT_DIR$/midi/shebeco_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/shenando_.mid" afterPath="$PROJECT_DIR$/midi/shenando_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/shoofly_.mid" afterPath="$PROJECT_DIR$/midi/shoofly_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/sidewalk_.mid" afterPath="$PROJECT_DIR$/midi/sidewalk_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/silentni_.mid" afterPath="$PROJECT_DIR$/midi/silentni_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/singing_.mid" afterPath="$PROJECT_DIR$/midi/singing_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/skiptomy_.mid" afterPath="$PROJECT_DIR$/midi/skiptomy_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/son1cmaj.mid" afterPath="$PROJECT_DIR$/midi/son1cmaj.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/son3gmaj.mid" afterPath="$PROJECT_DIR$/midi/son3gmaj.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ssbanner_.mid" afterPath="$PROJECT_DIR$/midi/ssbanner_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/strolling_.mid" afterPath="$PROJECT_DIR$/midi/strolling_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/sugar_pf_.mid" afterPath="$PROJECT_DIR$/midi/sugar_pf_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/summtime (1).mid" afterPath="$PROJECT_DIR$/midi/summtime (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/summtime.mid" afterPath="$PROJECT_DIR$/midi/summtime.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/swinglow_.mid" afterPath="$PROJECT_DIR$/midi/swinglow_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/taraboom_.mid" afterPath="$PROJECT_DIR$/midi/taraboom_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/tavern_.mid" afterPath="$PROJECT_DIR$/midi/tavern_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/tenlitin_.mid" afterPath="$PROJECT_DIR$/midi/tenlitin_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/thatsall (1).mid" afterPath="$PROJECT_DIR$/midi/thatsall (1).mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/thatsall.mid" afterPath="$PROJECT_DIR$/midi/thatsall.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/tocadmin.mid" afterPath="$PROJECT_DIR$/midi/tocadmin.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/tocca5th.mid" afterPath="$PROJECT_DIR$/midi/tocca5th.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/turkey_.mid" afterPath="$PROJECT_DIR$/midi/turkey_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/twfriend_.mid" afterPath="$PROJECT_DIR$/midi/twfriend_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/unforget_.mid" afterPath="$PROJECT_DIR$/midi/unforget_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/uponhtop_.mid" afterPath="$PROJECT_DIR$/midi/uponhtop_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ushavtem_.mid" afterPath="$PROJECT_DIR$/midi/ushavtem_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wadewatr_.mid" afterPath="$PROJECT_DIR$/midi/wadewatr_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wafriend_.mid" afterPath="$PROJECT_DIR$/midi/wafriend_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/waltmat_.mid" afterPath="$PROJECT_DIR$/midi/waltmat_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wegather_.mid" afterPath="$PROJECT_DIR$/midi/wegather_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wereyou_.mid" afterPath="$PROJECT_DIR$/midi/wereyou_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wewishua_.mid" afterPath="$PROJECT_DIR$/midi/wewishua_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/what_ch2_.mid" afterPath="$PROJECT_DIR$/midi/what_ch2_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/whatchil_.mid" afterPath="$PROJECT_DIR$/midi/whatchil_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wishstar.mid" afterPath="$PROJECT_DIR$/midi/wishstar.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/wmchimes.mid" afterPath="$PROJECT_DIR$/midi/wmchimes.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/ydoodle_.mid" afterPath="$PROJECT_DIR$/midi/ydoodle_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/yellowro_.mid" afterPath="$PROJECT_DIR$/midi/yellowro_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/yribbon_.mid" afterPath="$PROJECT_DIR$/midi/yribbon_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/midi/zumgali_.mid" afterPath="$PROJECT_DIR$/midi/zumgali_.mid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_dump.h5py" afterPath="$PROJECT_DIR$/model_dump.h5py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net_dump.nw" afterPath="$PROJECT_DIR$/net_dump.nw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_model_saved.h5py" afterPath="$PROJECT_DIR$/text_model_saved.h5py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/db.sqlite3" afterPath="$PROJECT_DIR$/../mcr/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/static/music/1.mp3" afterPath="$PROJECT_DIR$/../mcr/static/music/1.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/static/music/Kalimba.mp3" afterPath="$PROJECT_DIR$/../mcr/static/music/Kalimba.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gym.iml" afterPath="$PROJECT_DIR$/.idea/gym.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/music21 lstm generation-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/music21 lstm generation-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_generator.py" afterPath="$PROJECT_DIR$/data_generator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_text.py" afterPath="$PROJECT_DIR$/generate_text.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getting_midi_from_string.py" afterPath="$PROJECT_DIR$/getting_midi_from_string.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gym.py" afterPath="$PROJECT_DIR$/gym.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lstm_text_generation.py" afterPath="$PROJECT_DIR$/lstm_text_generation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.py" afterPath="$PROJECT_DIR$/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net.py" afterPath="$PROJECT_DIR$/net.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operations.py" afterPath="$PROJECT_DIR$/operations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/properties.py" afterPath="$PROJECT_DIR$/properties.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_model.py" afterPath="$PROJECT_DIR$/text_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_test.py" afterPath="$PROJECT_DIR$/text_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/.idea/mcr.iml" afterPath="$PROJECT_DIR$/../mcr/.idea/mcr.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/.idea/misc.xml" afterPath="$PROJECT_DIR$/../mcr/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/.idea/modules.xml" afterPath="$PROJECT_DIR$/../mcr/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../mcr/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/manage.py" afterPath="$PROJECT_DIR$/../mcr/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/mcr/__init__.py" afterPath="$PROJECT_DIR$/../mcr/mcr/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/mcr/settings.py" afterPath="$PROJECT_DIR$/../mcr/mcr/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/mcr/urls.py" afterPath="$PROJECT_DIR$/../mcr/mcr/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/mcr/wsgi.py" afterPath="$PROJECT_DIR$/../mcr/mcr/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/__init__.py" afterPath="$PROJECT_DIR$/../mcr/sender/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/admin.py" afterPath="$PROJECT_DIR$/../mcr/sender/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/apps.py" afterPath="$PROJECT_DIR$/../mcr/sender/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/migrations/__init__.py" afterPath="$PROJECT_DIR$/../mcr/sender/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/models.py" afterPath="$PROJECT_DIR$/../mcr/sender/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/JQueryRotate.js" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/JQueryRotate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/base.css" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/base.js" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/music.css" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/music.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/music.js" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/script.js" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/static/sender/style.css" afterPath="$PROJECT_DIR$/../mcr/sender/static/sender/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/templates/sender/base.html" afterPath="$PROJECT_DIR$/../mcr/sender/templates/sender/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/templates/sender/index.html" afterPath="$PROJECT_DIR$/../mcr/sender/templates/sender/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/templates/sender/music.html" afterPath="$PROJECT_DIR$/../mcr/sender/templates/sender/music.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/tests.py" afterPath="$PROJECT_DIR$/../mcr/sender/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/urls.py" afterPath="$PROJECT_DIR$/../mcr/sender/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mcr/sender/views.py" afterPath="$PROJECT_DIR$/../mcr/sender/views.py" />
     </list>
     <ignored path="gym.iws" />
@@ -29,7 +296,7 @@
       <file leaf-file-name="gym.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gym.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="108">
               <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -41,7 +308,7 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="90">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -53,7 +320,7 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="54">
               <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -65,7 +332,7 @@
       <file leaf-file-name="operations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2304">
+            <state relative-caret-position="2214">
               <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -77,21 +344,11 @@
       <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="90">
               <caret line="11" column="75" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="75" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +366,7 @@
       <file leaf-file-name="lstm_text_generation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lstm_text_generation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="180">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#359#396#0" expanded="true" />
@@ -121,7 +378,7 @@
       <file leaf-file-name="text_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
+            <state relative-caret-position="936">
               <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -133,8 +390,8 @@
       <file leaf-file-name="generate_text.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="185">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="e#18#55#0" expanded="true" />
               </folding>
@@ -172,7 +429,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-1" />
     <option name="width" value="1600" />
     <option name="height" value="873" />
   </component>
@@ -226,123 +482,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../deepjazz/deepjazz" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/generate_text.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/lstm_text_generation.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/text_model.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/net.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/music21 lstm generation.ipynb</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.gym">
     <configuration default="false" name="gym" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -642,13 +784,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1600" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.249375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32816538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -726,14 +868,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -792,14 +927,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -858,14 +986,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -904,14 +1025,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1022,20 +1136,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pygpu-0.2.1-py2.7-linux-x86_64.egg/pygpu/reduction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pygpu-0.2.1-py2.7-linux-x86_64.egg/pygpu/reduction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pygpu-0.2.1-py2.7-linux-x86_64.egg/pygpu/reduction.py" />
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pygpu-0.2.1-py2.7-linux-x86_64.egg/pygpu/reduction.py" />
     <entry file="file://$PROJECT_DIR$/test_lstm.py" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1046,7 +1148,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="90">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -1056,7 +1158,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
+        <state relative-caret-position="2214">
           <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -1066,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="54">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -1074,14 +1176,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../deepjazz/deepjazz/generator.py" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1092,7 +1187,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="90">
           <caret line="11" column="75" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="75" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -1102,7 +1197,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gym.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="108">
           <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -1112,7 +1207,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lstm_text_generation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="180">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#359#396#0" expanded="true" />
@@ -1122,7 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="936">
           <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -1132,8 +1227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="185">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="e#18#55#0" expanded="true" />
           </folding>
