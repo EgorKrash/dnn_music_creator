@@ -19,7 +19,7 @@ for iteration in range(1, 110):
     print()
     print('-' * 50)
     print('Iteration', iteration)
-    model.fit_generator(generate_text(chars), 1720, nb_epoch=20)
+    model.fit_generator(generate_text(chars), 1500, nb_epoch=20)
     model.save_weights('text_model_saved.h5py')
     for divercity in [0.2, 0.5, 1, 1.2]:
-        generate_song(divercity)
+        generate_song_stateful(divercity)

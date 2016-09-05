@@ -3,8 +3,7 @@ from music21 import converter
 import random
 import sys
 from os import listdir
-
-
+from stateful_net import get_st_model
 maxlen = 200
 step = 3
 
@@ -52,7 +51,8 @@ for i, sentence in enumerate(sentences):
 def generate_text(chars):
     while True:
         files = [each for each in listdir('midi') if each.endswith('.mid')]
-        for i, fi in enumerate(files):
+        fi = random.choice(files)
+        for i, fil in enumerate(files):
             text = ''
             #print(fi)
             parsed = converter.parse('midi/'+fi)
@@ -116,4 +116,36 @@ def generate_song(model, diversity=1.0, length=1000):
         sys.stdout.flush()
     print()
     return generated
+
+
+def generate_song_stateful(diversity=1.0, length=1000):
+    st = get_st_model()
+    start_index = random.randint(0, len(text) - maxlen - 1)
+    print('----- diversity:', diversity)
+    generated = ''
+    sentence = text[start_index: start_index + maxlen]
+    generated += sentence
+    print('----- Generating with seed: "' + sentence + '"')
+    sys.stdout.write(generated)
+
+    x = np.zeros((1, maxlen, len(chars)))
+    for t, char in enumerate(sentence):
+        x[0, t, char_indices[char]] = 1.
+    for i in xrange(x.shape[1]):
+        st.predict(np.array([[x[0, i]]]))
+    sentence = sentence[-1:]
+    for i in range(length):
+        x = np.zeros((1, 1, len(chars)))
+        for t, char in enumerate(sentence):
+            x[0, 0, char_indices[char]] = 1.
+        preds = st.predict(x, verbose=0)[0]
+        next_index = sample(preds, diversity)
+        next_char = indices_char[next_index]
+        generated += next_char
+        sentence = '' + next_char
+        sys.stdout.write(next_char)
+        sys.stdout.flush()
+    print()
+    return generated
+
 

@@ -2,7 +2,7 @@
 from __future__ import print_function
 from getting_midi_from_string import StringConverter
 from keras.models import load_model
-from text_model import generate_song
+from text_model import generate_song_stateful
 import sys
 from os import system
 
@@ -11,7 +11,7 @@ model = load_model('model_dump.h5py')
 model.load_weights('text_model_saved.h5py')
 
 print("Generating song")
-converter = StringConverter(generate_song(model))
+converter = StringConverter(generate_song_stateful())
 
 file_path = 'out.mid'
 if len(sys.argv) > 1:
