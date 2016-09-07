@@ -10,15 +10,20 @@ model = load_model('model_dump.h5py')
 
 model.load_weights('text_model_saved.h5py')
 
-print("Generating song")
-converter = StringConverter(generate_song_stateful())
-
+divercity = 0.5
 file_path = 'out.mid'
 if len(sys.argv) > 1:
     print('saving to:', sys.argv[1])
     file_path = sys.argv[1]
+    if len(sys.argv) > 2:
+        divercity = float(sys.argv[2])
 else:
     print("No file path given. Saving to out.mid")
+
+
+print("Generating song")
+converter = StringConverter(generate_song_stateful(divercity))
+
 
 tmp_path = 'tmp/' + file_path.split('/')[-1].split('.')[0]+'.mid'
 

@@ -6,8 +6,8 @@ from keras.optimizers import RMSprop
 from text_model import *
 print('Build model...')
 model = Sequential()
-model.add(LSTM(150, input_shape=(maxlen, len(chars)), return_sequences=True))
-model.add(LSTM(128))
+model.add(LSTM(150, batch_input_shape=(batch_size,maxlen, len(chars)), return_sequences=True, stateful=True))
+model.add(LSTM(128 , stateful=True))
 model.add(Dense(len(chars)))
 print (len(chars))
 model.add(Activation('softmax'))

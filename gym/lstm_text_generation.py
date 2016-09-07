@@ -15,11 +15,18 @@ if isfile('text_model_saved.h5py'):
     model.load_weights('text_model_saved.h5py')
 
 # train the model, output generated text after each iteration
-for iteration in range(1, 110):
+i = 0
+for generator in generate_text(chars):
+    i+=1
     print()
     print('-' * 50)
-    print('Iteration', iteration)
-    model.fit_generator(generate_text(chars), 1500, nb_epoch=20)
-    model.save_weights('text_model_saved.h5py')
-    for divercity in [0.2, 0.5, 1, 1.2]:
-        generate_song_stateful(divercity)
+    for i in xrange(20):
+        model.reset_states()
+        try:
+            model.fit_generator(generator, 100000, nb_epoch=1)
+        except BaseException:
+            continue
+        model.save_weights('text_model_saved.h5py')
+    if i % 20 == 0:
+        for divercity in [0.2, 0.5, 1, 1.2]:
+            generate_song_stateful(divercity)
