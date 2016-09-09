@@ -1,9 +1,12 @@
-import numpy as np
-from music21 import converter, stream, note, chord
 import random
 import sys
 from os import listdir
+
+import numpy as np
+from music21 import converter, stream, note, chord
+
 from stateful_net import get_st_model
+
 maxlen = 1
 step = 1
 batch_size = 1000
@@ -20,7 +23,7 @@ def dur_to_text(dur):
     else:
         return _dur_to_text['quarter']
 
-instruments = ['Violin', 'Piano', 'Saxophone', 'Guitar']
+instruments = ['Violin', 'Piano', 'Saxophone', 'Guitar', 'Harpsicord']
 
 for part in parsed:
     for voice in part.getElementsByClass(stream.Voice):
@@ -72,7 +75,8 @@ def get_song_ds_generator(fi):
                     for pitch in thisNote.pitches:
                         text += pitch.name + str(pitch.octave)
                     text += dur_to_text(thisNote.duration.type) + 'z'
-
+    if len(text)< batch_size:
+        return
     # print('corpus length:', len(text))
     # cut the text in semi-redundant sequences of maxlen characters
     sentences = []
@@ -81,8 +85,8 @@ def get_song_ds_generator(fi):
         sentences.append(text[i: i + maxlen])
         next_chars.append(text[i + maxlen])
     # print('nb sequences:', len(sentences))
-    print 'looping'
     while True:
+        print 'looping'
         # print('Vectorization...')
         X = np.zeros((generate_per_batch, maxlen, len(chars)), dtype=np.bool)
         y = np.zeros((generate_per_batch, len(chars)), dtype=np.bool)

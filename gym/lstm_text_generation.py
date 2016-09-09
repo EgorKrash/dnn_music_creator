@@ -8,8 +8,10 @@ has at least ~100k characters. ~1M is better.
 '''
 
 from __future__ import print_function
-from net import *
+
 from os.path import isfile
+
+from net import *
 
 if isfile('text_model_saved.h5py'):
     model.load_weights('text_model_saved.h5py')
@@ -20,10 +22,10 @@ for generator in generate_text(chars):
     i+=1
     print()
     print('-' * 50)
-    for i in xrange(20):
+    for i in xrange(2):
         model.reset_states()
         try:
-            model.fit_generator(generator, 100000, nb_epoch=1)
+            model.fit_generator(generator, 20000, nb_epoch=1)
         except BaseException:
             continue
         model.save_weights('text_model_saved.h5py')
